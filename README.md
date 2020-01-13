@@ -21,38 +21,27 @@ Things you may want to cover:
 |name|string|null: false|
 |member_id|integer|null: false, foreign_key: true|
 ### Association
-- has_many :chats
-- belongs_to :member
-
-## membersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- has_many :groups, through:   :members_groups
+- has_many :messages
+- has_many :groups, through:   :users_groups
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|text|nulll: false|
-
 ### Association
-- has_many :members, through:   :members_groups
-- has_many :chats
+- has_many :users, through:   :users_groups
+- has_many :messages
 
-
-## members_groupsテーブル
+## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|member_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :member
+- belongs_to :user
 - belongs_to :group
 
-## chatsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
@@ -61,7 +50,7 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-_ belongs_to :group
+- belongs_to :group
 
 
 
