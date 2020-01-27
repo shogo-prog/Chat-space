@@ -1,0 +1,40 @@
+._main_chat
+  .group-info
+    .group-info__group
+      .group-info__group-name
+        test
+      .group-info__group-member
+        Member : masa
+    .group-info__edit
+      = link_to "#", class:"group-info__edit-btn" do
+        Edit
+  .message-lists
+    .message-list1
+      .message-list1__upper-info
+        .message-list1__upper-info__user
+          masa
+        .message-list1__upper-info__date
+          2019/1/20(Wed) 17:43:01
+      .messafe-list1-text
+        おはよう
+    .message-list2
+      .message-list2__upper-info
+        .message-list2__upper-info__user
+          masa
+        .message-list2__upper-info__date
+          2019/1/20(Wed) 17:43:44
+      .messafe-list2-text
+        今日は夜から雨    
+  .message-form
+    .input
+      .input__box
+        .input__box__new-message
+          type a message
+        %label.input__box__image 
+          = icon('far', 'image')
+          %input{type:"file", class:"input-file"}
+      
+      .input__send-btn
+        send
+        
+      
