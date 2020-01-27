@@ -60,45 +60,45 @@
   padding: 40px;
 
 
-.message-list1{
-  margin-bottom: 46px;
+  .message-list1{
+    margin-bottom: 46px;
 
-  &__upper-info{
-    margin-bottom: 12px;
-    display: flex;
+    &__upper-info{
+      margin-bottom: 12px;
+      display: flex;
 
-    &__user {
-      font-size: 16px;
-      color: #333333;
-      margin-right: 10px;
-    }
+      &__user {
+        font-size: 16px;
+        color: #333333;
+        margin-right: 10px;
+      }
 
-    &__date {
-      font-size: 12px;
-      color: #999999;
-    }
-  }
-}
-
-.message-list2{
-  margin-bottom: 46px;
-
-  &__upper-info{
-    margin-bottom: 12px;
-    display: flex;
-
-    &__user {
-      font-size: 16px;
-      color: #333333;
-      margin-right: 10px;
-    }
-
-    &__date {
-      font-size: 12px;
-      color: #999999;
+      &__date {
+        font-size: 12px;
+        color: #999999;
+      }
     }
   }
-}
+
+  .message-list2{
+    margin-bottom: 46px;
+
+    &__upper-info{
+      margin-bottom: 12px;
+      display: flex;
+
+      &__user {
+        font-size: 16px;
+        color: #333333;
+        margin-right: 10px;
+      }
+
+      &__date {
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
 }
 
 
