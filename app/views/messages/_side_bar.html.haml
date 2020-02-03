@@ -4,13 +4,15 @@
       .top-items__name
         masa
       .top-items__icon
-        = link_to "#", class: "top-items__icon-edit"do
+        = link_to new_group_path, class: "top-items__icon-edit"do
           = icon('far', 'edit')
-        = link_to "#", class: "top-items__icon-cog" do
+        = link_to edit_user_path(current_user.id), class: "top-items__icon-cog" do
           = icon('fas', 'cog')
   ._side_bar__group-lists
-    ._side-bar__group-lists1  
-      ._side_bar__group-lists1__group-name
-        techcamp
-      ._side_bar__group-lists1__newest-message
-        まだメッセージがありません
+    - current_user.groups.each do |group| 
+      ._side-bar__group-lists
+        = link_to '#' do
+          ._side_bar__group-lists__name
+            = group.name
+          ._side_bar__group-lists__newest-message
+           まだメッセージがありません
