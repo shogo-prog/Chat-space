@@ -2,17 +2,18 @@
   ._side_bar__user-name
     .top-items
       .top-items__name
-        masa
+        = current_user.name
       .top-items__icon
-        = link_to new_group_path, class: "top-items__icon-edit"do
+        = link_to new_group_path, class: "top-items__icon-edit" do
           = icon('far', 'edit')
-        = link_to edit_user_path(current_user.id), class: "top-items__icon-cog" do
+        = link_to edit_user_path(current_user), class: "top-items__icon-cog" do
           = icon('fas', 'cog')
   ._side_bar__group-lists
     - current_user.groups.each do |group| 
       ._side-bar__group-lists
-        = link_to '#' do
-          ._side_bar__group-lists__name
+        = link_to group_messages_path(group) do
+          ._side_bar__group-lists__name 
             = group.name
           ._side_bar__group-lists__newest-message
-            まだメッセージがありません
+            = group.show_last_message
+            
