@@ -53,6 +53,7 @@
 }
 
 .message-lists {
+  overflow: scroll;
   z-index: 0;
   background-color: #fafafa;
   border-top-color: #eeeeee;
@@ -92,6 +93,7 @@
   height: 90px;
   padding: 20px 40px;
   display: flex;
+  width: 100%;
   
   .new_message {
     display: flex;
@@ -100,7 +102,7 @@
     color: #999999;
     border: none;
     height: 50px;
-    width: 654px;
+    width: 100%;
     padding-left: 10px;
   }
 
