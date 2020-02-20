@@ -31,10 +31,11 @@
       color: #ffffff;
       text-align: left;
     }
-}
-  &__group-lists a {
-    text-decoration: none;
   }
+
+ ._side-bar__group-lists a {
+   text-decoration: none;
+ }
 
 .top-items {
   height: 20px;
@@ -76,5 +77,4 @@
     margin-left: 0;
   }
 }
-
 }
