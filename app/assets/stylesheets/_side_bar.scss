@@ -9,6 +9,10 @@
     position: relative;
   }
 
+  &__group-lists a {
+    text-decoration: none;
+  }
+
   &__group-lists {
     
     overflow: scroll;
@@ -32,10 +36,6 @@
       text-align: left;
     }
   }
-
- ._side-bar__group-lists a {
-   text-decoration: none;
- }
 
 .top-items {
   height: 20px;
