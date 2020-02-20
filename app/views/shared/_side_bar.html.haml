@@ -10,7 +10,7 @@
           = icon('fas', 'cog')
   ._side_bar__group-lists
     - current_user.groups.each do |group| 
-      ._side-bar__group-lists
+      ._side_bar__group-lists
         = link_to group_messages_path(group) do
           ._side_bar__group-lists__name 
             = group.name
